@@ -192,8 +192,8 @@ if __name__ == '__main__':
     # Search for matches recursively
     recursive_result = search_for_regex_match(top_dir,regex)
     # Check to see if outputs match
-    bool = (result == recursive_result)
-    if bool:
+    success = (result == recursive_result)
+    if success:
         print "Outputs from recursion match creation result!"
     else:
         print "Outputs from recursion do not match creation result!"
